@@ -3,8 +3,8 @@
 ## Step 1
 ### Respository forken
 
--Klicke oben rechts auf **Fork**, um eine Kopie des Repositories in deinem GitHub-Konto zu erstellen.
--Klone das Respository auf deinen lokalen Rehcner:
+-Klicke oben rechts auf **Fork**, um eine Kopie des Repositories in deinem GitHub-Konto zu erstellen.  
+-Klone das Respository auf deinen lokalen Rechner:
 ```bash
 git clone https://github.com/calviin73/praxisphase-1.git
 ```
