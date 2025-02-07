@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>View Options</title>
+</head>
+<body class="bg-gray-900 flex items-start justify-center min-h-screen gap-6 pt-10">
+    <!-- Linker Container -->
+    <div class="bg-gray-800 p-6 rounded-lg w-72 relative">
+        <div class="flex justify-between items-center mb-2 pb-2">
+            <h2 class="text-gray-400 text-sm">VIEW OPTIONS</h2>
+            <div class="flex gap-2">
+                <button class="text-gray-400">📌</button>
+                <button class="text-gray-400">✖</button>
+            </div>
+        </div>
+        <div class="mb-4 border-b border-gray-600 pb-2">
+            <p class="text-white">Point Cloud</p>
+            <div class="flex justify-between gap-2">
+                <span class="text-gray-400 text-sm">Point Size</span>
+                <input type="range" class="w-24" value="9" max="10">
+                <span class="text-white">9</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center mb-4 border-b border-gray-600 pb-2">
+            <p class="text-white">Coordinate frames</p>
+            <button class="text-white">+</button>
+        </div>
+        <div class="flex justify-between items-center mb-4 border-b border-gray-600 pb-2">
+            <p class="text-white">CAD matches</p>
+            <button class="text-white">▼</button>
+        </div>
+        <div class="flex justify-between items-center mb-4 border-b border-gray-600 pb-2">
+            <p class="text-white">Grasps</p>
+            <button class="text-white">▼</button>
+        </div>
+        <div class="mb-4 border-b border-gray-600 pb-2">
+            <div class="flex justify-between items-center pb-4">
+                <p class="text-white">Gripper</p>
+                <button class="text-white">▼</button>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-gray-600">Returned</span>
+                <div>
+                    <button class="bg-blue-600 text-white px-2 py-1 rounded">Show</button>
+                    <button class="bg-gray-700 text-gray-400 px-2 py-1 rounded">Hide</button>
+                </div>
+            </div>
+            <div class="flex justify-between mt-2 pb-2">
+                <span class="text-gray-600">Additional</span>
+                <div>
+                    <button class="bg-gray-700 text-gray-400 px-2 py-1 rounded">Show</button>
+                    <button class="bg-blue-600 text-white px-2 py-1 rounded">Hide</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between items-center mb-4 border-b border-gray-600 pb-2">
+            <p class="text-white">Load Carrier</p>
+            <button class="text-white">▼</button>
+        </div>
+        <button class="bg-gray-700 text-white w-full py-2 rounded">Reset View</button>
+    </div>
+    
+    <!-- Rechter Container -->
+    <div class="bg-gray-800 p-6 rounded-lg w-80 relative">
+        <div class="flex justify-between items-center mb-2 pb-2">
+            <h2 class="text-gray-400 text-sm">VIEW OPTIONS</h2>
+            <div class="flex gap-2">
+                <button class="text-gray-400">📌</button>
+                <button class="text-gray-400">✖</button>
+            </div>
+        </div>
+        <div class="mb-4 border-b border-gray-600 pb-2">
+            <p class="text-white">Point cloud</p>
+            <div class="flex justify-between gap-2">
+                <span class="text-gray-400 text-sm">Point Size</span>
+                <input type="range" class="w-32" value="2" max="10">
+                <span class="text-white">2</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center mb-4 border-b border-gray-600 pb-2">
+            <p class="text-white">Coordinate frames</p>
+            <button class="text-white">+</button>
+        </div>
+        <div class="mb-4 border-b border-gray-600 pb-2">
+            <div class="flex justify-between items-center pb-4">
+            <p class="text-white">CAD matches</p> 
+            <button class="text-white">▼</button> 
+        </div>
+        <div class="flex justify-between">
+            <span class="text-gray-600">Returned</span>
+            <div>
+                <button class="bg-blue-600 text-white px-2 py-1 rounded">Show</button>
+                <button class="bg-gray-700 text-gray-400 px-2 py-1 rounded">Hide</button>
+            </div>
+        </div>
+        <div class="flex justify-between border-b border-gray-600 mt-2 pb-4">
+            <span class="text-gray-600">Additional</span>
+            <div>
+                <button class="bg-gray-700 text-gray-400 px-2 py-1 rounded">Show</button>
+                <button class="bg-blue-600 text-white px-2 py-1 rounded">Hide</button>
+            </div>
+        </div>
+        <div class="mb-4 border-b border-gray-600 pb-2">
+            <div class="flex justify-between items-center pb-4 mt-4">
+            <p class="text-white">Grasps</p>
+            <button class="text-white">▼</button>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-gray-600">Valid grasps</span>
+                <div>
+                    <button class="bg-blue-600 text-white px-2 py-1 rounded">Show</button>
+                    <button class="bg-gray-700 text-gray-400 px-2 py-1 rounded">Hide</button>
+                </div>
+            </div>
+            <div class="flex justify-between mt-2">
+                <span class="text-gray-600">Valid grasps</span>
+                <div>
+                    <button class="bg-blue-600 text-white px-2 py-1 rounded">Show</button>
+                    <button class="bg-gray-700 text-gray-400 px-2 py-1 rounded">Hide</button>
+                </div>
+            </div>
+            <div class="flex justify-between mt-2">
+                <span class="text-gray-600">Colliding grasps</span>
+                <div>
+                    <button class="bg-blue-600 text-white px-2 py-1 rounded">Show</button>
+                    <button class="bg-gray-700 text-gray-400 px-2 py-1 rounded">Hide</button>
+                </div>
+            </div>
+        </div>
+        <div class="mb-4 border-b border-gray-600 pb-2">
+            <p class="text-white">Gripper</p>
+            <div class="flex justify-between gap-2">
+                <span class="text-gray-400 text-sm">Animation Speed</span>
+                <input type="range" class="w-24" value="2" max="10">
+                <span class="text-white">2</span>
+            </div>
+        </div>
+        <div class="mb-4 pb-2">
+            <p class="text-white">Load Carrier</p>
+            <div class="flex justify-between mt-2">
+                <span class="text-gray-600">Wireframe</span>
+                <div>
+                    <button class="bg-blue-600 text-white px-2 py-1 rounded">Show</button>
+                    <button class="bg-gray-700 text-gray-400 px-2 py-1 rounded">Hide</button>
+                </div>
+            </div>
+        </div>
+        <button class="bg-gray-700 text-white w-full py-2 rounded">Reset View</button>
+    </div>
+</body>
+</html>
