@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgxLoggerComponent } from './ngx-logger.component';
+import { ListeComponent } from './liste.component';
 
-describe('NgxLoggerComponent', () => {
-  let component: NgxLoggerComponent;
-  let fixture: ComponentFixture<NgxLoggerComponent>;
+describe('ListeComponent', () => {
+  let component: ListeComponent;
+  let fixture: ComponentFixture<ListeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NgxLoggerComponent]
+      imports: [ListeComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NgxLoggerComponent);
+    fixture = TestBed.createComponent(ListeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
