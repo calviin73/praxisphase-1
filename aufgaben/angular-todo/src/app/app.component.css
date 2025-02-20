@@ -1,13 +1,68 @@
-/* Globales Styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
-  
+/* Container für die gesamte Liste */
+app-liste .liste-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 20px;
+}
+
+/* Linke Seite mit Buttons & Input */
+app-liste .controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 40%;
+}
+
+app-liste input[type="text"] {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Buttons */
+app-liste button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+app-liste button:hover {
+  background-color: #0056b3;
+}
+
+/* Rechte Seite mit der Liste */
+app-liste .liste {
+  width: 60%;
+}
+
+app-liste ul {
+  list-style: none;
+  padding: 0;
+}
+
+app-liste li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Checkbox */
+app-liste input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-left: 10px;
+}

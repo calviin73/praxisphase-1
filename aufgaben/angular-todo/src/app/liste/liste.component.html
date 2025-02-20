@@ -10,7 +10,7 @@
     <div class="liste">
       <ul>
         <li *ngFor="let item of items">
-          <span class="item-text" [style.textDecoration]="item.checked ? 'line-through' : 'none'">
+          <span class="item-text" [style.textDecoration]="item.checked ? 'none' : 'none'">
             {{ item.name }}
           </span>
           <input type="checkbox" [(ngModel)]="item.checked">
