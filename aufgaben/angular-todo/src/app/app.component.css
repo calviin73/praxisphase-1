@@ -1,16 +1,16 @@
-/* Container für die gesamte Liste */
+/* Container für die gesamte To-Do-Liste */
 app-liste .liste-container {
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #ffffff;
+  background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   gap: 20px;
 }
 
-/* Linke Seite mit Buttons & Input */
+/* Steuerbereich mit Eingabe und Buttons */
 app-liste .controls {
   display: flex;
   flex-direction: column;
@@ -18,34 +18,35 @@ app-liste .controls {
   width: 40%;
 }
 
+/* Eingabefeld */
 app-liste input[type="text"] {
   padding: 10px;
   border: 2px solid #ddd;
   border-radius: 5px;
   font-size: 16px;
-  outline: none;
 }
 
 /* Buttons */
 app-liste button {
-  background-color: #007bff;
+  background: #007bff;
   color: white;
   border: none;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 app-liste button:hover {
-  background-color: #0056b3;
+  background: #0056b3;
 }
 
-/* Rechte Seite mit der Liste */
+/* Bereich für die Liste */
 app-liste .liste {
   width: 60%;
 }
 
+/* Listen-Styling */
 app-liste ul {
   list-style: none;
   padding: 0;
